@@ -1,0 +1,42 @@
+import java.util.Scanner;
+public class Gcdlcm
+{
+public static void main(String[] args)
+{
+Scanner ob=new Scanner(System.in);
+int a,b,lcm,gcd,x,y,r;                   //x,y,r are temporary variables
+System.out.print("enter two numbers");
+a=ob.nextInt();
+b=ob.nextInt();
+if(a<b)
+{
+x=b;
+y=a;
+r=x%y;
+}
+else
+{
+x=a;
+y=b;
+r=x%y;
+}
+if(r==0)
+{
+gcd=y;
+lcm=(a*b)/gcd;
+System.out.println("gcd is"+" "+gcd);
+System.out.println("lcm is"+" "+lcm);
+}
+else
+{
+while(r==0);
+x=y;
+y=r;
+r=x%y;
+gcd=y;
+lcm=(a*b)/gcd;
+System.out.println("gcd is"+" "+gcd);
+System.out.println("lcm is"+" "+lcm);
+}
+}
+}
