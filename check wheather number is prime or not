@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Prime
+{
+public static void main(String []args)
+{
+Scanner ob=new Scanner(System.in);
+int a,x=2,c=0;
+System.out.println("enter number");
+a=ob.nextInt();
+for(x=2;x<a;x++)                      //checking staring from from 2 leaving 1;util number-1
+{
+if(a%x==0)
+{
+c=c+1;
+break;
+}
+}
+if(c==0)
+{
+System.out.println("number is prime");
+}
+else
+{
+System.out.println("number is not prime");
+}
+}
+}
