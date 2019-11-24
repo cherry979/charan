@@ -1,0 +1,16 @@
+import java.util.*;
+public class Main
+{
+ public static void main(String []args)
+ {
+  Scanner ob=new Scanner(System.in);
+  int a,b,c;
+  System.out.println("Enter first number");
+  a=ob.nextInt();
+  System.out.println("Enter second number");
+  b=ob.nextInt();
+  System.out.print("sumof two numbers is"+" ");
+  c=a+b;
+  System.out.print(c);
+ }
+} 
