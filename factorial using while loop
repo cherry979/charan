@@ -1,0 +1,17 @@
+import java.util.Scanner;
+public class Factorial
+{
+public static void main(String[] args)
+{
+Scanner ob=new Scanner(System.in);
+int a,b=1,c=1;
+System.out.print("enter a number");
+a=ob.nextInt();                          //Enter required number
+while(b<=a)                              
+{
+  c=c*b;                          
+  b=b+1;                              //increation statement
+}
+System.out.println(c);
+}
+}
