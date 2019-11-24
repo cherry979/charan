@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Factorial
+{
+public static void main(String[] args)
+{
+Scanner ob=new Scanner(System.in);
+int a,c=1;
+System.out.print("enter a number");
+a=ob.nextInt();
+for(int b=1;b<=a;b++)
+{
+c=c*b;
+}
+System.out.println(c);
+}
+}
